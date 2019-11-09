@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+}
+
+.header {
+    position: relative;
+
+    box-sizing: border-box;
+    display: flex;
+    height: 48px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+
+    .drop-down-menu {
+        cursor: pointer;
+        width: 50px;
+        height: 100%;
+
+        background-color: #FFFFFF;
+        border: 0;
+
+        &:hover {
+            background-color: #C4C4C4;
+        }
+    }
+
+    .title {
+        margin-left: 24px;
+
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 47px;
+
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    .options-menu {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        width: 40px;
+        height: 100%;
+
+        background-color: #FFFFFF;
+        border: 0;
+
+        &:hover {
+            background-color: #C4C4C4;
+        }
+    }
+}
+
+.instruments-block_size_small {
+    width: 228px;
+    height: 246px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.text_style_roboto {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(0, 0, 0, 0.541327);
+}
+
+.button {
+    cursor: pointer;
+    height: 50%;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    background-color: #FFFFFF;
+    border: 0;
+
+    &:hover {
+        background-color: #C4C4C4;
+    }
+
+    &_small {
+        height: 25%;
+    }
+}
+
+.color-circle {
+    margin: 0 14px 0 18px;
+
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #000000;
+    border-radius: 50%;
+
+    &_color {
+        &_gray {
+            background-color: #C4C4C4;
+        }
+
+        &_light-green {
+            background-color: #41F795;
+        }
+
+        &_red {
+            background-color: #F74141;
+        }
+
+        &_blue {
+            background-color: #41B6F7;
+        }
+    }
+}
+
+.main {
+    position: relative;
+
+    height: 852px;
+
+    .instruments-section {
+        position: absolute;
+
+        top: 79px;
+        left: 2%;
+
+        .paint-section,
+        .position-change-section {
+            display: flex;
+            flex-direction: column;
+
+            height: 50%;
+        }
+
+        .paint-section {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
+
+        .instrument-icon {
+            margin: 0 33px 0 18px;
+        }
+
+        .instrument-item {
+            display: inline-block;
+        }
+    }
+
+    .change-color-section {
+        position: absolute;
+
+        top: 417px;
+        left: 2%;
+
+        &__first-section, &__second-section {
+            height: 50%;
+        }
+
+        &__first-section {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    .select-image-section {
+        position: absolute;
+
+        top: 79px;
+        right: 2%;
+
+        .image-select-button-icon {
+            width: 14px;
+            height: 14px;
+            
+            border: 2px solid rgba(0, 0, 0, 0.541327);
+            border-radius: 4px;
+            margin: 0 30px 0 20px;
+        }
+    }
+}
+
+.draw-section {
+    position: absolute;
+
+    left: 32%;
+    top: 79px;
+}
+
+#canvas {
+    border: 1px solid #808080;
+}
+
