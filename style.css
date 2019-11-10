@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header .drop-down-menu {
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+  background-color: #FFFFFF;
+  border: 0;
+}
+
+.header .drop-down-menu:hover {
+  background-color: #C4C4C4;
+}
+
+.header .title {
+  margin-left: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 47px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.header .options-menu {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  background-color: #FFFFFF;
+  border: 0;
+}
+
+.header .options-menu:hover {
+  background-color: #C4C4C4;
+}
+
+.instruments-block_size_small {
+  width: 228px;
+  height: 246px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.text_style_roboto {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.541327);
+}
+
+.button {
+  cursor: pointer;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 0;
+}
+
+.button:hover {
+  background-color: #C4C4C4;
+}
+
+.button_small {
+  height: 25%;
+}
+
+.color-circle {
+  margin: 0 14px 0 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.color-circle_color_gray {
+  background-color: #C4C4C4;
+}
+
+.color-circle_color_light-green {
+  background-color: #41F795;
+}
+
+.color-circle_color_red {
+  background-color: #F74141;
+}
+
+.color-circle_color_blue {
+  background-color: #41B6F7;
+}
+
+.main {
+  position: relative;
+  height: 852px;
+}
+
+.main .instruments-section {
+  position: absolute;
+  top: 79px;
+  left: 2%;
+}
+
+.main .instruments-section .paint-section,
+.main .instruments-section .position-change-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+}
+
+.main .instruments-section .paint-section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.main .instruments-section .instrument-icon {
+  margin: 0 33px 0 18px;
+}
+
+.main .instruments-section .instrument-item {
+  display: inline-block;
+}
+
+.main .change-color-section {
+  position: absolute;
+  top: 417px;
+  left: 2%;
+}
+
+.main .change-color-section__first-section, .main .change-color-section__second-section {
+  height: 50%;
+}
+
+.main .change-color-section__first-section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.main .select-image-section {
+  position: absolute;
+  top: 79px;
+  right: 2%;
+}
+
+.main .select-image-section .image-select-button-icon {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(0, 0, 0, 0.541327);
+  border-radius: 4px;
+  margin: 0 30px 0 20px;
+}
+
+.draw-section {
+  position: absolute;
+  left: 32%;
+  top: 79px;
+}
+
+#canvas {
+  border: 1px solid #808080;
+}
+/*# sourceMappingURL=style.css.map */

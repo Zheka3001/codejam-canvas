@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <button class="drop-down-menu">
+            <img src="data/images/menu-icon.svg" alt="menu">
+        </button>
+        <h1 class="title">CodeJam-Pallete</h1>
+        <button class="options-menu">
+            <img src="data/images/instruments-icon.svg" alt="menu options">
+        </button>
+    </header>
+
+    <main class="main">
+
+        <div class="instruments-section instruments-block_size_small">
+            <div class="paint-section">
+                <button class="button">
+                    <img src="data/images/paint-bucket-icon.svg" alt="bucket image" class="instrument-icon">
+                    <span class="text_style_roboto instrument-item instrument-item-paint-bucket">Paint bucket</span>
+                </button>
+                <button class="button">
+                    <img src="data/images/choose-color-icon.svg" alt="pen image" class="instrument-icon">
+                    <span class="text_style_roboto instrument-item instrument-item-choose-color">Choose color</span>
+                </button>
+            </div>
+            <div class="position-change-section">
+                <button class="button">
+                    <img src="data/images/move-icon.svg" alt="move image" class="instrument-icon">
+                    <span class="text_style_roboto instrument-item instrument-item-move">Move</span>
+                </button>
+                <button class="button">
+                    <img src="data/images/transform-icon.svg" alt="transform image" class="instrument-icon">
+                    <span class="text_style_roboto instrument-item instrument-item-transform">Transform</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="change-color-section instruments-block_size_small">
+            <div class="change-color-section__first-section">
+                <button class="color-choose-button button">
+                    <div class="color-circle color-circle_color_gray"></div>
+                    <span class="text_style_roboto">Current color</span>
+                </button>
+                <button class="color-choose-button button">
+                    <div class="color-circle color-circle_color_light_green"></div>
+                    <span class="text_style_roboto">Prev color</span>
+                </button>
+            </div>
+            <div class="change-color-section__second-section">
+                <button class="color-choose-button button">
+                    <div class="color-circle color-circle_color_red"></div>
+                    <span class="text_style_roboto">red</span>
+                </button>
+                <button class="color-choose-button button">
+                    <div class="color-circle color-circle_color_blue"></div>
+                    <span class="text_style_roboto">blue</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="draw-section">
+            <canvas id="canvas">Reload the page.</canvas>
+        </div>
+        
+        <div class="select-image-section instruments-block_size_small">
+            <button class="image-select-button button button_small" onclick="draw4x4()">
+                <div class="image-select-button-icon"></div>
+                <span class="text_style_roboto">4x4</span>
+            </button>
+            <button class="image-select-button button button_small" onclick="draw32x32()">
+                <div class="image-select-button-icon"></div>
+                <span class="text_style_roboto">32x32</span>
+            </button>
+            <button class="image-select-button button button_small" onclick="drawImage()">
+                <div class="image-select-button-icon"></div>
+                <span class="text_style_roboto">256x256</span>
+            </button>
+        </div>
+        
+    </main>
+
+    <script src="data/for_canvas/4x4.js"></script>
+    <script src="data/for_canvas/32x32.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
